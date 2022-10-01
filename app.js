@@ -39,6 +39,20 @@ app.get("/", function(req,res){
     res.send("<h1>Hello</h1>");
 });
 
+// using the get() method for creating a get route for "/contact" to take the 
+// user to the contact me page
+app.get("/contact", function(req,res){
+    // using the send() method from res instance to send a response when the user hit the 
+    // "/contact" route
+    res.send("Contact me at: abcd@xyz.com");
+});
+
+// using the get() method for creating a get route for "/about" to take the user to the 
+// about page
+app.get("/about", function(req,res){
+    res.send("This is about me page");
+});
+
 // the code below is to use the listen() method from the app
 // instance for listening to the request made by the user
 // at port 3000
